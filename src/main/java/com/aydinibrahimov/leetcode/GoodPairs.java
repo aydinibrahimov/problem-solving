@@ -8,6 +8,7 @@ public class GoodPairs {
         int sum=0;
         int[] arr = {1, 2, 3, 1, 1, 3};
         int[][] d= {{1,2,3,4,5,6,7},{8,7,4,5,6,1,2},{0,9,8,2,5,4,7}};
+        System.out.println(maximumWealth(d));
         List<Integer> list=new ArrayList<>();
         list=Arrays.stream(d).flatMapToInt(Arrays::stream).boxed().collect(Collectors.toList());
         for(int a:list){
@@ -15,18 +16,22 @@ public class GoodPairs {
         }
 
 
-    System.out.println(numIdenticalPairsA(arr));
-        System.out.println(numIdenticalPairsC(arr));
-        System.out.println(list);
-
-        Map<Integer, Integer> map = new HashMap<>();
-        map.put(0, 5);
-        map.put(1, 5);
-        System.out.println(map);
-
-
     }
-
+    public static int maximumWealth(int[][] accounts) {
+        int l=accounts.length;
+        int h=accounts[0].length;
+        System.out.println(l+" "+h);
+        int sum=0;
+        int rich;
+        for(int a=0;a<l;a++){
+            rich= 0;
+        for(int b=0;b<l;b++){
+                rich=rich+accounts[a][b];
+            }
+            if(sum>rich)continue;
+            sum=rich;
+        }return sum;
+    }
     public static int numIdenticalPairsA(int[] nums) {
         int count = 0;
         HashMap<Integer, Integer> map = new HashMap<>();

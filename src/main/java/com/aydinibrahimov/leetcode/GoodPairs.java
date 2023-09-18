@@ -16,9 +16,12 @@ public class GoodPairs {
             map.put(String.valueOf(count), a);
             count++;
         }
-        System.out.println(map.values());
-        System.out.println(list.stream().distinct().collect(Collectors.toList()));
-        System.out.println(set);
+        List<List<Integer>> duplicatePairs = list.stream()
+                .flatMap(a -> list.stream().map(b -> Arrays.asList(a, b)))
+                .distinct()
+                .collect(Collectors.toList());
+
+        System.out.println(duplicatePairs);
 
     }
 

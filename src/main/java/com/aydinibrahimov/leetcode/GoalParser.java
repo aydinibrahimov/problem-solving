@@ -1,9 +1,15 @@
 package com.aydinibrahimov.leetcode;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class GoalParser {
-    public static void main(String[] args) {
-        int[][] arr = {{1, 2, 3}, {4, 9, 13}, {8, 5, 2, 4, 6}};
-        System.out.println(maximumWealth(arr));
+    public static void main(String... args) {
+        Arrays.asList(args).stream()
+                .map(String::toUpperCase)
+                .collect(Collectors.toList());
+
 
     }
 

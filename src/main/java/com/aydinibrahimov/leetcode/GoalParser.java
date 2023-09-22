@@ -2,16 +2,26 @@ package com.aydinibrahimov.leetcode;
 
 public class GoalParser {
     public static void main(String[] args) {
-
+        int[][] arr = {{1, 2, 3}, {4,}, {8, 5, 2, 4, 6}};
+        System.out.println(maximumWealth(arr));
 
     }
 
     //LeecCode link -> https://leetcode.com/problems/richest-customer-wealth/
     //My LeetCode profile: https://leetcode.com/aydinibrahimov
+
     public static int maximumWealth(int[][] accounts) {
+        int n = accounts.length;
+        int rich=0;
+        for (int i = 0; i < n; i++) {
+            int sum=0;
+            for (int j = 0; j < accounts[i].length; j++) {
+                sum=sum+accounts[i][j];
 
-
-        return 0;
+            }
+            if(rich<sum)rich=sum;
+        }
+        return rich;
     }
 
 

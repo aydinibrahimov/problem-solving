@@ -3,8 +3,7 @@ package com.aydinibrahimov.leetcode;
 public class GoalParser {
     public static void main(String[] args) {
 
-        String s = "G()()()()(al)";
-        System.out.println(interpret(s));
+
 
 
     }

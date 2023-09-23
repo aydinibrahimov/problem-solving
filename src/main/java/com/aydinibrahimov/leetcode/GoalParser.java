@@ -9,7 +9,14 @@ public class GoalParser {
         Arrays.asList(args).stream()
                 .map(String::toUpperCase)
                 .collect(Collectors.toList());
+    }
 
+    public static int getTotal(String... names) {
+       return Arrays.stream(names)
+               .parallel()
+               .filter(name->name.length()>5)
+               .mapToInt(String::length)
+               .sum();
 
     }
 

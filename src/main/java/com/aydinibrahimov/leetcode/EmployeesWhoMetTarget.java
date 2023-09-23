@@ -9,6 +9,8 @@ public class EmployeesWhoMetTarget {
 
 
     public static long numberOfEmployeesWhoMetTarget(int[] hours, int target) {
-        return Arrays.stream(hours).filter(h -> h >= target).count();
+        return Arrays.stream(hours)
+                .filter(h -> h >= target)
+                .count();
     }
 }

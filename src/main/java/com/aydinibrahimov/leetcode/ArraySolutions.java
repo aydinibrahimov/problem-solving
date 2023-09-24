@@ -1,38 +1,54 @@
 package com.aydinibrahimov.leetcode;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.HashMap;
 
-public class GoodPairs  {
+public class ArraySolutions {
     public static void main(String[] args) {
-        String[] s={"alice and bob love leetcode","i think so too","this is great thanks very much"};
-        for(String r:s){
-            System.out.println(r.isBlank());
-        }
 
     }
-    public static int mostWordsFound(String[] sentences) {
 
-        Arrays.stream(sentences).filter(clause->clause.contentEquals(" ")).count();
-return 0;
+
+    public static long numberOfEmployeesWhoMetTarget(int[] hours, int target) {
+        return Arrays.stream(hours)
+                .filter(h -> h >= target)
+                .count();
+    }
+
+
+    //LeecCode link -> https://leetcode.com/problems/richest-customer-wealth/
+    //My LeetCode profile: https://leetcode.com/aydinibrahimov
+    public static int maximumWealth1(int[][] accounts) {
+        int n = accounts.length;
+        int rich = 0;
+        for (int i = 0; i < n; i++) {
+            int sum = 0;
+            for (int j = 0; j < accounts[i].length; j++) {
+                sum = sum + accounts[i][j];
+            }
+            if (rich < sum) rich = sum;
+        }
+        return rich;
     }
 
 
     public static int maximumWealth(int[][] accounts) {
-        int l=accounts.length;
-        int h=accounts[0].length;
-        System.out.println(l+" "+h);
-        int sum=0;
+        int l = accounts.length;
+        int h = accounts[0].length;
+        System.out.println(l + " " + h);
+        int sum = 0;
         int rich;
-        for(int a=0;a<l;a++){
-            rich= 0;
-        for(int b=0;b<l;b++){
-                rich=rich+accounts[a][b];
+        for (int a = 0; a < l; a++) {
+            rich = 0;
+            for (int b = 0; b < l; b++) {
+                rich = rich + accounts[a][b];
             }
-            if(sum>rich)continue;
-            sum=rich;
-        }return sum;
+            if (sum > rich) continue;
+            sum = rich;
+        }
+        return sum;
     }
+
     public static int numIdenticalPairsA(int[] nums) {
         int count = 0;
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -64,9 +80,9 @@ return 0;
 
         for (int a : nums) {
 
-            if(map.containsKey(a)){
+            if (map.containsKey(a)) {
                 count++;
-            }else{
+            } else {
                 map.put(a, i);
             }
             i++;
@@ -74,4 +90,5 @@ return 0;
 
         return count;
     }
+
 }

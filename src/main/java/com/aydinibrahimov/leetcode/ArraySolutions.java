@@ -4,12 +4,21 @@ import java.util.*;
 
 public class ArraySolutions {
     public static void main(String[] args) {
-
+        int[] arr = {2, 3, 5, 1, 3};
+        kidsWithCandies(arr, 3);
     }
 
-    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-
-        return null;
+    public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        Arrays.sort(candies);
+        List<Boolean> list = new ArrayList<>();
+        for (int c : candies) {
+            if (c + extraCandies < candies[candies.length - 1]) {
+                list.add(false);
+                continue;
+            }
+            list.add(true);
+        }
+        return list;
     }
 
 

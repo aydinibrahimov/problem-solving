@@ -3,7 +3,7 @@ package com.aydinibrahimov.leetcode;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class GoodPairs {
+public class GoodPairs  {
     public static void main(String[] args) {
         int sum=0;
         int[] arr = {1, 2, 3, 1, 1, 3};
@@ -14,8 +14,9 @@ public class GoodPairs {
         for(int a:list){
             sum+=a;
         }
-
-
+Sample sample=new Sample("s",1,(float)3);
+        sample=new Sample("p",2,(float)8);
+        System.out.println(sample);
     }
     public static int maximumWealth(int[][] accounts) {
         int l=accounts.length;

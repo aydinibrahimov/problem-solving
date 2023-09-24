@@ -6,6 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public record  Sample (String name,int a,Enum b){
+public record  Sample  (String name,int a,Float b) {
 
 }

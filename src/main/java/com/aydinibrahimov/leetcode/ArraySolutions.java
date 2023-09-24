@@ -11,16 +11,14 @@ public class ArraySolutions {
     public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
 
         List<Boolean> list = new ArrayList<>();
-        int max=0;
-
+        int max = 0;
         for (int c : candies) {
-           if(c>max)max=c;
+            if (c > max) max = c;
         }
-        for (int c : candies){
-            if(c+extraCandies>=max){
+        for (int c : candies) {
+            if (c + extraCandies >= max) {
                 list.add(true);
-            }
-            else {
+            } else {
                 list.add(false);
             }
         }

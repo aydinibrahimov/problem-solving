@@ -5,19 +5,19 @@ import java.util.stream.Collectors;
 
 public class GoodPairs  {
     public static void main(String[] args) {
-        int sum=0;
-        int[] arr = {1, 2, 3, 1, 1, 3};
-        int[][] d= {{1,2,3,4,5,6,7},{8,7,4,5,6,1,2},{0,9,8,2,5,4,7}};
-        System.out.println(maximumWealth(d));
-        List<Integer> list=new ArrayList<>();
-        list=Arrays.stream(d).flatMapToInt(Arrays::stream).boxed().collect(Collectors.toList());
-        for(int a:list){
-            sum+=a;
+        String[] s={"alice and bob love leetcode","i think so too","this is great thanks very much"};
+        for(String r:s){
+            System.out.println(r.isBlank());
         }
-Sample sample=new Sample("s",1,(float)3);
-        sample=new Sample("p",2,(float)8);
-        System.out.println(sample);
+
     }
+    public static int mostWordsFound(String[] sentences) {
+
+        Arrays.stream(sentences).filter(clause->clause.contentEquals(" ")).count();
+return 0;
+    }
+
+
     public static int maximumWealth(int[][] accounts) {
         int l=accounts.length;
         int h=accounts[0].length;

@@ -5,7 +5,26 @@ import java.util.stream.Collectors;
 
 public class StringSolutions {
     public static void main(String... args) {
+        String f = "RLRRLLRLRL";
 
+        System.out.println(balancedStringSplit(f));
+
+    }
+
+
+    public static int balancedStringSplit(String s) {
+        int ans = 0, l = 0;
+        for (char c : s.toCharArray()) {
+            if (c == 'L') {
+                ++l;
+            } else {
+                --l;
+            }
+            if (l == 0) {
+                ++ans;
+            }
+        }
+        return ans;
     }
 
     public static int getTotal(String... names) {
@@ -14,7 +33,6 @@ public class StringSolutions {
                 .filter(name -> name.length() > 5)
                 .mapToInt(String::length)
                 .sum();
-
     }
 
 

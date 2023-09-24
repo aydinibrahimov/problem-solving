@@ -1,11 +1,15 @@
 package com.aydinibrahimov.leetcode;
 
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.*;
 
 public class ArraySolutions {
     public static void main(String[] args) {
 
+    }
+
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+
+        return null;
     }
 
 

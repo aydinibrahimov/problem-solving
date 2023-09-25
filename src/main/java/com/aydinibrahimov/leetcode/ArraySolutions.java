@@ -7,13 +7,14 @@ public class ArraySolutions {
         int[] arr = {2, 3, 5, 1, 3};
 
     }
+
     public static int countPairs(List<Integer> nums, int target) {
-        int sum=0,count=0;
-        int n=nums.size();
-        for(int i=0;i<n-1;i++){
-            for(int j=i+1;j<n;j++){
-               sum= nums.get(i)+nums.get(j);
-               if(sum<target)count++;
+        int sum = 0, count = 0;
+        int n = nums.size();
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j < n; j++) {
+                sum = nums.get(i) + nums.get(j);
+                if (sum < target) count++;
             }
         }
 

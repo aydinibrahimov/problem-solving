@@ -5,7 +5,11 @@ import java.util.*;
 public class ArraySolutions {
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 1, 3};
-        kidsWithCandies(arr, 3);
+
+    }
+    public static int countPairs(List<Integer> nums, int target) {
+
+        return 0;
     }
 
     public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
@@ -16,11 +20,7 @@ public class ArraySolutions {
             if (c > max) max = c;
         }
         for (int c : candies) {
-            if (c + extraCandies >= max) {
-                list.add(true);
-            } else {
-                list.add(false);
-            }
+            list.add((c + extraCandies) >= max);
         }
         return list;
     }

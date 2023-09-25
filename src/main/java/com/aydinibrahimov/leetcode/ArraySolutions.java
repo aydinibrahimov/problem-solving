@@ -8,8 +8,16 @@ public class ArraySolutions {
 
     }
     public static int countPairs(List<Integer> nums, int target) {
+        int sum=0,count=0;
+        int n=nums.size();
+        for(int i=0;i<n-1;i++){
+            for(int j=i+1;j<n;j++){
+               sum= nums.get(i)+nums.get(j);
+               if(sum<target)count++;
+            }
+        }
 
-        return 0;
+        return count;
     }
 
     public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {

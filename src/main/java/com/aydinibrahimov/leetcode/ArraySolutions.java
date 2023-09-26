@@ -1,11 +1,42 @@
 package com.aydinibrahimov.leetcode;
 
+import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
+
 import java.util.*;
+import java.util.stream.Stream;
 
 public class ArraySolutions {
     public static void main(String[] args) {
-        int[] arr = {2, 3, 5, 1, 3};
+        int[] arr = {8,1,2,2,3};
+        arr=smallerNumbersThanCurrent(arr);
+        for(int a:arr){
+            System.out.println(a);
+        }
 
+
+    }
+    public static int[] smallerNumbersThanCurrent(int[] nums) {
+        for(int i=0;i<nums.length;i++){
+            int count=0;
+            for(int j=0;j<nums.length;j++){
+                if(nums[i]>nums[j])count++;
+            }
+            nums[i]=count;
+
+        }
+        return nums;
+    }
+
+    public static int maxProfit(int[] prices) {
+
+        int n=prices.length;
+        int min=10;
+        int max=0;
+        int profit=0;
+        for(int i:prices){
+
+        }
+        return profit;
     }
 
     // [1,2,3,4]-->[1,3,6,10]

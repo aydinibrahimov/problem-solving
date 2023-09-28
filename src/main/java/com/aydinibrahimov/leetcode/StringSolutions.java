@@ -1,25 +1,27 @@
 package com.aydinibrahimov.leetcode;
 
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 public class StringSolutions {
     public static void main(String[] args) {
-    String s="codeleet";
-    int[]i={4,5,6,7,0,2,1,3};
-        System.out.println(restoreString(s, i));
+        String s = "codeleet";
+        int[] i = {4, 5, 6, 7, 0, 2, 1, 3};
+        // System.out.println(restoreString(s, i));
+        restoreString(s, i);
 
     }
 
     public static String restoreString(String s, int[] indices) {
-        String[] ss=new String[s.length()];
-       for(int i: indices){
-           ss[i]=String.valueOf(s.charAt(i));
-       }
-       s="";
-        for(String k:ss){
-            s+=k;
+        Character e[] = new Character[indices.length];
+        int n = 0;
+        for (int i : indices) {
+            e[n] = s.charAt(i);
+            n++;
         }
-
-        return s;
+        return String.valueOf(e);
     }
 
 

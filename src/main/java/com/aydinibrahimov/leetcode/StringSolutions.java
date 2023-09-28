@@ -3,16 +3,28 @@ package com.aydinibrahimov.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class StringSolutions {
     public static void main(String[] args) {
-        String s = "codeleet";
-        int[] i = {4, 5, 6, 7, 0, 2, 1, 3};
-        System.out.println(restoreString(s, i));
-        restoreString(s, i);
+        List<List<String>> list = List.of(List.of("phone", "blue", "pixel"),
+                List.of("computer", "silver", "lenovo"),
+                List.of("phone", "gold", "iphone"));
+
 
     }
+
+    public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
+        Map<String, Integer> map = Map.of("type", 0, "color", 1, "name", 2);
+        int count = 0;
+        int index = map.get(ruleKey);
+        for (List<String> list : items) {
+            if (list.get(index).equals(ruleValue)) count++;
+        }
+        return count;
+    }
+
 
     public static String restoreString(String s, int[] indices) {
         char[] charArray = new char[s.length()];

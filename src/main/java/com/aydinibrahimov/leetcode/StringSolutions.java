@@ -10,11 +10,16 @@ public class StringSolutions {
     }
 
     public static String restoreString(String s, int[] indices) {
-        char[] f = new char[indices.length];
-        for (int i : indices) {
-            f[i] = s.charAt(i);
+        String[] ss=new String[s.length()];
+       for(int i: indices){
+           ss[i]=String.valueOf(s.charAt(i));
+       }
+       s="";
+        for(String k:ss){
+            s+=k;
         }
-        return f.toString();
+
+        return s;
     }
 
 

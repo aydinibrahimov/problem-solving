@@ -9,19 +9,17 @@ public class StringSolutions {
     public static void main(String[] args) {
         String s = "codeleet";
         int[] i = {4, 5, 6, 7, 0, 2, 1, 3};
-        // System.out.println(restoreString(s, i));
+        System.out.println(restoreString(s, i));
         restoreString(s, i);
 
     }
 
     public static String restoreString(String s, int[] indices) {
-        Character e[] = new Character[indices.length];
-        int n = 0;
-        for (int i : indices) {
-            e[n] = s.charAt(i);
-            n++;
+        char[] charArray = new char[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            charArray[indices[i]] = s.charAt(i);
         }
-        return String.valueOf(e);
+        return String.valueOf(charArray);
     }
 
 

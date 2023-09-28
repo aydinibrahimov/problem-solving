@@ -2,6 +2,7 @@ package com.aydinibrahimov.leetcode;
 
 import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
 
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
@@ -10,11 +11,11 @@ import java.util.stream.Stream;
 public class ArraySolutions {
     public static void main(String[] args) {
         int[] arr = {8,1,2,2,3};
-        FileOutputStream os=new FileOutputStream("");
-        }
-
 
     }
+
+
+
     public static int[] smallerNumbersThanCurrent(int[] nums) {
         int[] arr=new int[nums.length];
 

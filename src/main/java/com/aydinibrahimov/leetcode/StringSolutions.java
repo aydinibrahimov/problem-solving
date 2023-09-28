@@ -1,10 +1,22 @@
 package com.aydinibrahimov.leetcode;
 
+
 public class StringSolutions {
     public static void main(String[] args) {
-
+    String s="codeleet";
+    int[]i={4,5,6,7,0,2,1,3};
+        System.out.println(restoreString(s, i));
 
     }
+
+    public static String restoreString(String s, int[] indices) {
+        char[] f = new char[indices.length];
+        for (int i : indices) {
+            f[i] = s.charAt(i);
+        }
+        return f.toString();
+    }
+
 
     public static int balancedStringSplit(String s) {
         int ans = 0, l = 0;
@@ -19,14 +31,6 @@ public class StringSolutions {
             }
         }
         return ans;
-    }
-
-    public static int getTotal(String... names) {
-        return Arrays.stream(names)
-                .parallel()
-                .filter(name -> name.length() > 5)
-                .mapToInt(String::length)
-                .sum();
     }
 
 

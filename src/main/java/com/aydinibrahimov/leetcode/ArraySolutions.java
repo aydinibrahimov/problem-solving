@@ -14,6 +14,12 @@ public class ArraySolutions {
 
     }
 
+    public static int sumIndicesWithKSetBits(List<Integer> nums, int k) {
+    for (int i=0;i<nums.size();i++)
+        String s=Integer.toBinaryString(i);
+        return 0;
+
+    }
 
 
     public static int[] smallerNumbersThanCurrent(int[] nums) {

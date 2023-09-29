@@ -16,12 +16,15 @@ public class StringSolutions {
     }
 
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
+
         Map<String, Integer> map = Map.of("type", 0, "color", 1, "name", 2);
-        int count = 0;
         int index = map.get(ruleKey);
+        int count = 0;
+
         for (List<String> list : items) {
             if (list.get(index).equals(ruleValue)) count++;
         }
+
         return count;
     }
 

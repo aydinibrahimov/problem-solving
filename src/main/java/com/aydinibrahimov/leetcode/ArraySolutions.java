@@ -10,37 +10,47 @@ import java.util.stream.Stream;
 
 public class ArraySolutions {
     public static void main(String[] args) {
-        int[] arr = {8,1,2,2,3};
+        int[] arr = {8, 1, 2, 2, 3};
 
+    }
+
+    public int removeDuplicates(int[] nums) {
+        int index = 1;
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] != nums[i + 1]) {
+                nums[index++] = nums[i + 1];
+            }
+        }
+        return index;
     }
 
     public static int sumIndicesWithKSetBits(List<Integer> nums, int k) {
         int i;
-    for (i=0;i<nums.size();i++)
+        for (i = 0; i < nums.size(); i++)
 
     }
 
 
     public static int[] smallerNumbersThanCurrent(int[] nums) {
-        int[] arr=new int[nums.length];
+        int[] arr = new int[nums.length];
 
-        for(int i=0;i<nums.length;i++){
-            int count=0;
-            for(int j=0;j<nums.length;j++){
-                if(nums[i]>nums[j])count++;
+        for (int i = 0; i < nums.length; i++) {
+            int count = 0;
+            for (int j = 0; j < nums.length; j++) {
+                if (nums[i] > nums[j]) count++;
             }
-            arr[i]=count;
+            arr[i] = count;
         }
         return nums;
     }
 
     public static int maxProfit(int[] prices) {
 
-        int n=prices.length;
-        int min=10;
-        int max=0;
-        int profit=0;
-        for(int i:prices){
+        int n = prices.length;
+        int min = 10;
+        int max = 0;
+        int profit = 0;
+        for (int i : prices) {
 
         }
         return profit;

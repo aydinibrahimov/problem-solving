@@ -24,7 +24,7 @@ public class ArraySolutions {
         return n;
     }
 
-    public  int[] decode(int[] encoded, int first) {
+    public static int[] decode(int[] encoded, int first) {
         int[] arr=new int[encoded.length+1];
         arr[0]=first;
         for(int i=0;i<encoded.length;i++){

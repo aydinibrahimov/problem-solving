@@ -24,18 +24,13 @@ public class ArraySolutions {
         return n;
     }
 
-//    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-//        LinkedList<String>cs=new LinkedList<>();
-//        System.out.println(cs.toString());
-//
-//    }
-//    public static int sumIndicesWithKSetBits(List<Integer> nums, int k) {
-//        int i;
-//        for (i = 0; i < nums.size(); i++){
-//
-//        }
-//
-//    }
+    public static int sumIndicesWithKSetBits(List<Integer> nums, int k) {
+        int i;
+        for (i = 0; i < nums.size(); i++){
+
+        }
+
+    }
 
 
     public static int[] smallerNumbersThanCurrent(int[] nums) {

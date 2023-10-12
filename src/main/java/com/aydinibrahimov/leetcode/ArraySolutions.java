@@ -5,13 +5,13 @@ import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.management.MemoryType;
 import java.util.*;
-import java.util.stream.Stream;
+
 
 public class ArraySolutions {
     public static void main(String[] args) {
         int[] arr = {8, 1, 2, 2, 3};
-
     }
 
     public static int removeDuplicates(int[] nums) {
@@ -24,18 +24,18 @@ public class ArraySolutions {
         return n;
     }
 
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        LinkedList<String>cs=new LinkedList<>();
-        System.out.println(cs.toString());
-
-    }
-    public static int sumIndicesWithKSetBits(List<Integer> nums, int k) {
-        int i;
-        for (i = 0; i < nums.size(); i++){
-
-        }
-
-    }
+//    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+//        LinkedList<String>cs=new LinkedList<>();
+//        System.out.println(cs.toString());
+//
+//    }
+//    public static int sumIndicesWithKSetBits(List<Integer> nums, int k) {
+//        int i;
+//        for (i = 0; i < nums.size(); i++){
+//
+//        }
+//
+//    }
 
 
     public static int[] smallerNumbersThanCurrent(int[] nums) {

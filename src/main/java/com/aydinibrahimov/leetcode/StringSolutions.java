@@ -13,8 +13,9 @@ public class StringSolutions {
                 List.of("phone", "gold", "iphone"));
     }
 
-    public String truncateSentence(String s, int k) {
+    public static String truncateSentence(String s, int k) {
 
+        return "state";
     }
 
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {

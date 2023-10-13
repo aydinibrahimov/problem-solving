@@ -11,7 +11,7 @@ public class StringSolutions {
                 List.of("computer", "silver", "lenovo"),
                 List.of("phone", "gold", "iphone"));
 
-        String s="A1:A3";
+        String s = "A1:A3";
     }
 
     public List<String> cellsInRange(String s) {
@@ -23,6 +23,7 @@ public class StringSolutions {
         }
         return ans;
     }
+
     public static String truncateSentence(String s, int k) {
         int i = 0, n = 0;
         for (char p : s.toCharArray()) {

@@ -3,20 +3,25 @@ package com.aydinibrahimov.leetcode;
 
 import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class StringSolutions {
     public static void main(String[] args) {
         List<List<String>> list = List.of(List.of("phone", "blue", "pixel"),
                 List.of("computer", "silver", "lenovo"),
                 List.of("phone", "gold", "iphone"));
+
+        String s="A1:B3";
+        System.out.println(s.indexOf(4));
     }
 
     public List<String> cellsInRange(String s) {
-        s.index
+        List<String> list=new ArrayList<>();
+        if(s.charAt(0)==s.charAt(3) ){
+            for(int i=)
+
+        }
+
 
     }
     public static String truncateSentence(String s, int k) {

@@ -11,18 +11,17 @@ public class StringSolutions {
                 List.of("computer", "silver", "lenovo"),
                 List.of("phone", "gold", "iphone"));
 
-        String s="A1:B3";
-        System.out.println(s.indexOf(4));
+        String s="A1:A3";
     }
 
     public List<String> cellsInRange(String s) {
-        List<String> list=new ArrayList<>();
-        if(s.charAt(0)==s.charAt(3) ){
-            for(int i=)
-
+        List<String> ans = new ArrayList<>();
+        for (char i = s.charAt(0); i <= s.charAt(3); i++) {
+            for (char j = s.charAt(1); j <= s.charAt(4); j++) {
+                ans.add(i + "" + j);
+            }
         }
-
-
+        return ans;
     }
     public static String truncateSentence(String s, int k) {
         int i = 0, n = 0;

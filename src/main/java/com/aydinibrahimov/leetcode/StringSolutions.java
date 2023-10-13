@@ -15,6 +15,10 @@ public class StringSolutions {
                 List.of("phone", "gold", "iphone"));
     }
 
+    public List<String> cellsInRange(String s) {
+        s.index
+
+    }
     public static String truncateSentence(String s, int k) {
         int i = 0, n = 0;
         for (char p : s.toCharArray()) {

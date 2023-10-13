@@ -1,6 +1,8 @@
 package com.aydinibrahimov.leetcode;
 
 
+import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -14,8 +16,13 @@ public class StringSolutions {
     }
 
     public static String truncateSentence(String s, int k) {
-
-        return "state";
+        int i = 0, n = 0;
+        for (char p : s.toCharArray()) {
+            if (p == ' ') n++;
+            if (n == k) break;
+            i++;
+        }
+        return s.subSequence(0, i).toString();
     }
 
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {

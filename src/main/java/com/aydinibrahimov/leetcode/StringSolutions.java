@@ -10,8 +10,6 @@ public class StringSolutions {
         List<List<String>> list = List.of(List.of("phone", "blue", "pixel"),
                 List.of("computer", "silver", "lenovo"),
                 List.of("phone", "gold", "iphone"));
-
-        String s = "A1:A3";
     }
 
     public List<String> cellsInRange(String s) {

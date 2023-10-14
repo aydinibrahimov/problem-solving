@@ -11,20 +11,13 @@ public class StringSolutions {
     }
 
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
-        StringBuilder s = new StringBuilder();
-        String x = null, y = "";
-        for (x:
-             word1) {
-            s.append(x);
-        }
+       if(word1.length==word2.length){
+        String f=   word1.toString();
+        String s=   word2.toString();
+        if(f.equals(s))return true;
 
-        StringBuilder t = new StringBuilder();
-        for (y:
-             word2) {
-            s.append(y);
-        }
-        return x.equals(y);
-
+       }
+        return false;
     }
 
     public List<String> cellsInRange(String s) {

@@ -7,29 +7,23 @@ import java.util.*;
 
 public class StringSolutions {
     public static void main(String[] args) {
-        String[] word1 = {"ab", "c"};
-        String[] word2 = {"a", "bc"};
+        String[] word1 = {"a", "cb"};
+        String[] word2 = {"ab", "c"};
         System.out.println(arrayStringsAreEqual(word1, word2));
 
     }
 
     public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
-        if (word1.length == word2.length) {
-            StringBuilder s = new StringBuilder();
-            StringBuilder p = new StringBuilder();
+        List<String> s=List.of(word1);
+        List<String> p=List.of(word2);
 
-            for (String a : word1) {
-                s.append(a);
-            }
 
-            for (String a : word2) {
-                p.append(a);
-            }
+        for(int i=0;i<a.length();i++){
 
-            if (p.equals(s)) return true;
 
         }
-        return false;
+     return a.equals(b);
+
     }
 
     public List<String> cellsInRange(String s) {

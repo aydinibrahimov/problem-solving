@@ -10,6 +10,23 @@ public class StringSolutions {
 
     }
 
+    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        StringBuilder s = new StringBuilder();
+        String x = null, y = "";
+        for (x:
+             word1) {
+            s.append(x);
+        }
+
+        StringBuilder t = new StringBuilder();
+        for (y:
+             word2) {
+            s.append(y);
+        }
+        return x.equals(y);
+
+    }
+
     public List<String> cellsInRange(String s) {
         List<String> ans = new ArrayList<>();
         for (char i = s.charAt(0); i <= s.charAt(3); i++) {

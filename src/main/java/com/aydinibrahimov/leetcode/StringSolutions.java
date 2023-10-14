@@ -7,9 +7,7 @@ import java.util.*;
 
 public class StringSolutions {
     public static void main(String[] args) {
-        List<List<String>> list = List.of(List.of("phone", "blue", "pixel"),
-                List.of("computer", "silver", "lenovo"),
-                List.of("phone", "gold", "iphone"));
+
     }
 
     public List<String> cellsInRange(String s) {

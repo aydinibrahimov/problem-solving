@@ -7,16 +7,29 @@ import java.util.*;
 
 public class StringSolutions {
     public static void main(String[] args) {
+        String[] word1 = {"ab", "c"};
+        String[] word2 = {"a", "bc"};
+        System.out.println(arrayStringsAreEqual(word1, word2));
 
     }
 
-    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
-       if(word1.length==word2.length){
-        String f=   word1.toString();
-        String s=   word2.toString();
-        if(f.equals(s))return true;
+    public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        if (word1.length == word2.length) {
+            StringBuilder s = new StringBuilder();
+            StringBuilder p = new StringBuilder();
 
-       }
+            for (String a : word1) {
+                s.append(a);
+            }
+
+            for (String a : word2) {
+                p.append(a);
+            }
+            String s = word2.toString();
+            System.out.println(f + " " + s);
+            if (f.equals(s)) return true;
+
+        }
         return false;
     }
 

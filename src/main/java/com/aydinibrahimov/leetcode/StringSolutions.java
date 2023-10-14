@@ -25,9 +25,8 @@ public class StringSolutions {
             for (String a : word2) {
                 p.append(a);
             }
-            String s = word2.toString();
-            System.out.println(f + " " + s);
-            if (f.equals(s)) return true;
+
+            if (p.equals(s)) return true;
 
         }
         return false;

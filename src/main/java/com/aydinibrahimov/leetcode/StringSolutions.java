@@ -13,6 +13,8 @@ public class StringSolutions {
 
     public static String decodeMessage(String key, String message) {
 
+
+        return "";
     }
 
     public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {

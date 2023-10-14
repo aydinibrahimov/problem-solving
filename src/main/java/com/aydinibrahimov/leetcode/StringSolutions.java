@@ -14,15 +14,9 @@ public class StringSolutions {
     }
 
     public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
-
-        String a = "", b = "";
-        for (int i = 0; i < word1.length; i++) {
-            a += word1[i];
-        }
-        for (int i = 0; i < word2.length; i++) {
-            b +=word2[i];
-        }
-        return  String.join(word1)
+        String a = String.join("", word1);
+        String b = String.join("", word2);
+        return a.equals(b);
     }
 
     public List<String> cellsInRange(String s) {

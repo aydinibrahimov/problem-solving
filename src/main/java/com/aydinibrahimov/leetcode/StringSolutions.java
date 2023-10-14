@@ -11,6 +11,10 @@ public class StringSolutions {
 
     }
 
+    public static String decodeMessage(String key, String message) {
+
+    }
+
     public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         String a = String.join("", word1);
         String b = String.join("", word2);

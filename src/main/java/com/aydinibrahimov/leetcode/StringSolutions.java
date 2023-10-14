@@ -7,9 +7,7 @@ import java.util.*;
 
 public class StringSolutions {
     public static void main(String[] args) {
-        String[] word1 = {"a", "cb"};
-        String[] word2 = {"ab", "c"};
-        System.out.println(arrayStringsAreEqual(word1, word2));
+
 
     }
 

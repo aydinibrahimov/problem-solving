@@ -7,12 +7,36 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.lang.management.MemoryType;
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class ArraySolutions {
     public static void main(String[] args) {
         int[] arr = {8, 1, 2, 2, 3};
     }
+
+    public int[] leftRightDifference(int[] arr) {
+        int n = arr.length - 1;
+        List<Integer> list
+                = Arrays.stream(arr).boxed().collect(
+                Collectors.toList());
+        for (
+                int i = 1;
+                i <= n; i++) {
+            int leftSum = list.subList(0, i)
+                    .stream()
+                    .mapToInt(x -> x)
+                    .sum();
+            int rightSum = list.subList(i + 1, n)
+                    .stream()
+                    .mapToInt(x -> x)
+                    .sum();
+
+
+        }
+return  null;
+    }
+
 
     public static int removeDuplicates(int[] nums) {
         int n = 1;

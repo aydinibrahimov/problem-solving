@@ -1,14 +1,16 @@
 package com.aydinibrahimov.leetcode;
 
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collector;
 
 public class Main {
 
     public static void main(String[] args) {
         Iterable i=new ArrayList();
-        Iterator it=new ArrayList();
-        Collection c=new ArrayList();
+        Iterator it=new Vector<>();
+        Collection c=new LinkedList();
+        List a=new CopyOnWriteArrayList();
 
 
         System.out.println(reverseString("Aydin"));

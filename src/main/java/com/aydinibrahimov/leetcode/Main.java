@@ -10,9 +10,10 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4};
-        List<Integer> uniqueNums = Arrays.stream(nums)
-                .distinct().boxed().collect(Collectors.toList());
+        int[] nums = {1, 2, 3, 4,4};
+        Set<Integer> set=new HashSet(List.of(nums));
+        System.out.println(set.size());
+        System.out.println(nums.length>set.size());
 
 
     }
@@ -23,7 +24,7 @@ public class Main {
                 .count() < nums.length;
         }
 
-    }
+
 
     static String reverseString(String str) {
         int l = str.length();

@@ -25,8 +25,19 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        double result = Math.pow(4, 2);
-        System.out.println(result);
+        int a=0b10;                      //4^0
+        int b=0b100;                    //4^1
+        int c=0b100_00;                 //4^2
+        int d=0b100_00_00;              //4^3
+        int e=0b100_00_00_00;           //4^4
+        int f=0b100_00_00_00_00;        //4^5
+        int g=0b100_00_00_00_00_00;     //4^6
+        System.out.println(a+" "+b+" "+c+" "+d+" "+e+" "+f+" "+g);
+        System.out.println(Integer.toBinaryString(-4096));
+        StringBuilder sb=new StringBuilder(Integer.toBinaryString(f));
+
+        sb.reverse();
+        System.out.println(Integer.valueOf(sb.toString()));
 
 
     }

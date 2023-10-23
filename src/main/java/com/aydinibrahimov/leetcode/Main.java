@@ -1,39 +1,30 @@
 package com.aydinibrahimov.leetcode;
 
+import org.yaml.snakeyaml.nodes.CollectionNode;
+
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.stream.Collectors;
 
 
 public class Main {
 
     public static void main(String[] args) {
-        Iterable i=new ArrayList();
-        Iterator it=new Vector<>();
-        Collection c=new LinkedList();
-        List a=new CopyOnWriteArrayList();
-        Set<Integer> set=new HashSet<>();
+        int[] nums = {1, 2, 3, 4};
+        List<Integer> uniqueNums = Arrays.stream(nums)
+                .distinct().boxed().collect(Collectors.toList());
 
 
+    }
 
-        System.out.println(reverseString("Aydin"));
-        Stack<String> items = new Stack<>();
-        items.push("A");
-        items.push("Y");
-        items.push("D");
-        items.push("I");
-        items.push("N");
-
-
-        System.out.println(items);
-        System.out.println(items.pop());
-        System.out.println(items);
-        System.out.println(items.pop());
-        System.out.println(items);
-        System.out.println(items.pop());
-        System.out.println(items);
-        System.out.println(items.pop());
-        System.out.println(items);
-
+    public boolean containsDuplicate(int[] nums) {
+        List<Integer> list = Arrays.stream(nums)
+                .distinct().boxed().collect(Collectors.toList());
+        if (list.size() < nums.length) {
+            return true;
+        } else {
+            return false;
+        }
 
     }
 

@@ -11,8 +11,11 @@ public class Main {
 
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 4,4};
+
         Set<Integer> set=new HashSet(List.of(nums));
-        System.out.println(set.size());
+        for(int a:set){
+            System.out.println(a);
+        }
         System.out.println(nums.length>set.size());
 
 

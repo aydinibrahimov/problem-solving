@@ -9,14 +9,24 @@ import java.util.stream.Collectors;
 
 public class Main {
 
-    public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4,4};
-
-        Set<Integer> set=new HashSet(List.of(nums));
-        for(int a:set){
-            System.out.println(a);
+    public boolean isPowerOfFour(int n) {
+        int power = 1;
+        int base = 4;
+        while (n >= base) {
+            power *= base;
+            if (n % 4 == 0) {
+                n /= base;
+            } else {
+                return false;
+            }
         }
-        System.out.println(nums.length>set.size());
+        if (n == 1) return true;
+        return false;
+    }
+
+    public static void main(String[] args) {
+        double result = Math.pow(4, 2);
+        System.out.println(result);
 
 
     }
@@ -25,8 +35,7 @@ public class Main {
         return Arrays.stream(nums)
                 .distinct()
                 .count() < nums.length;
-        }
-
+    }
 
 
     static String reverseString(String str) {

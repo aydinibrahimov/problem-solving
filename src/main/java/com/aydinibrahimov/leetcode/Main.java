@@ -18,12 +18,9 @@ public class Main {
     }
 
     public boolean containsDuplicate(int[] nums) {
-        List<Integer> list = Arrays.stream(nums)
-                .distinct().boxed().collect(Collectors.toList());
-        if (list.size() < nums.length) {
-            return true;
-        } else {
-            return false;
+        return Arrays.stream(nums)
+                .distinct()
+                .count() < nums.length;
         }
 
     }

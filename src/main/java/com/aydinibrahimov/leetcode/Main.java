@@ -2,7 +2,7 @@ package com.aydinibrahimov.leetcode;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.stream.Collector;
+
 
 public class Main {
 
@@ -11,6 +11,8 @@ public class Main {
         Iterator it=new Vector<>();
         Collection c=new LinkedList();
         List a=new CopyOnWriteArrayList();
+        Set<Integer> set=new HashSet<>();
+
 
 
         System.out.println(reverseString("Aydin"));

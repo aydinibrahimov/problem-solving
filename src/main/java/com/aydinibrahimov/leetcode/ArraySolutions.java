@@ -12,7 +12,20 @@ import java.util.stream.Collectors;
 
 public class ArraySolutions {
     public static void main(String[] args) {
-        int[] arr = {8, 1, 2, 2, 3};
+        int[] arr = {3, 2, 2, 3};
+        removeElement(arr, 2);
+    }
+
+
+    public static int removeElement(int[] nums, int val) {
+        int i = 0;
+        for (int a : nums) {
+            if (a != val) {
+                nums[i] = a;
+                i++;
+            }
+        }
+        return i;
     }
 
     public int[] leftRightDifference(int[] arr) {
@@ -34,7 +47,7 @@ public class ArraySolutions {
 
 
         }
-return  null;
+        return null;
     }
 
 

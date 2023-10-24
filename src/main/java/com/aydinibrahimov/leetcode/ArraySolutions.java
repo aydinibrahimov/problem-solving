@@ -12,10 +12,36 @@ import java.util.stream.Collectors;
 
 public class ArraySolutions {
     public static void main(String[] args) {
-        int[] arr = {3, 2, 2, 3};
-        removeElement(arr, 2);
+        int[] arr = {10,4,8,3};
+        for (int j:leftRightDifference(arr)){
+            System.out.println(j);
+        }
+
     }
 
+    public static int[] leftRightDifference(int[] nums) {
+        int[] leftSum = new int[nums.length];
+        int[] rightSum = new int[nums.length];
+        leftSum[0] = 0;
+        rightSum[nums.length-1] = 0;
+    int temp=0;
+        for (int i = 1; i < nums.length; i++) {
+             temp=temp+nums[i - 1];
+            leftSum[i] = temp;
+        }
+        int temp1=0;
+        for (int i = nums.length - 2; i > 0; i--) {
+             temp1=temp1+nums[i - 1];
+            rightSum[i] = temp;
+        }
+        int[] result = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+
+            result[i] = Math.abs(leftSum[i] - rightSum[i]);
+
+        }
+return result;
+    }
 
     public static int removeElement(int[] nums, int val) {
         int i = 0;
@@ -28,27 +54,27 @@ public class ArraySolutions {
         return i;
     }
 
-    public int[] leftRightDifference(int[] arr) {
-        int n = arr.length - 1;
-        List<Integer> list
-                = Arrays.stream(arr).boxed().collect(
-                Collectors.toList());
-        for (
-                int i = 1;
-                i <= n; i++) {
-            int leftSum = list.subList(0, i)
-                    .stream()
-                    .mapToInt(x -> x)
-                    .sum();
-            int rightSum = list.subList(i + 1, n)
-                    .stream()
-                    .mapToInt(x -> x)
-                    .sum();
-
-
-        }
-        return null;
-    }
+//    public int[] leftRightDifference(int[] arr) {
+//        int n = arr.length - 1;
+//        List<Integer> list
+//                = Arrays.stream(arr).boxed().collect(
+//                Collectors.toList());
+//        for (
+//                int i = 1;
+//                i <= n; i++) {
+//            int leftSum = list.subList(0, i)
+//                    .stream()
+//                    .mapToInt(x -> x)
+//                    .sum();
+//            int rightSum = list.subList(i + 1, n)
+//                    .stream()
+//                    .mapToInt(x -> x)
+//                    .sum();
+//
+//
+//        }
+//        return null;
+//    }
 
 
     public static int removeDuplicates(int[] nums) {

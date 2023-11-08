@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class ArraySolutions {
     public static void main(String[] args) {
 
-        System.out.println(romanToInt("MCMXCIV"));
+        System.out.println(romanToInt("LVIII"));
     }
 
     public static int romanToInt(String s) {
@@ -31,13 +31,12 @@ public class ArraySolutions {
         for (int i = 1; i < s.length(); i++) {
             char previous = s.charAt(i - 1);
             char next = s.charAt(i);
-            int val=0;
-            if (next < previous) {
-                 val = -1 * map.get(previous);
-
+            int val = map.get(previous);
+            if (map.get(next) > map.get(previous)) {
+                val = -1 * map.get(previous);
             }
             result = result + val;
-            if(i==s.length()-1) result=result+next;
+            if (i == s.length() - 1) result = result + map.get(next);
         }
         return result;
     }

@@ -12,35 +12,61 @@ import java.util.stream.Collectors;
 
 public class ArraySolutions {
     public static void main(String[] args) {
-        int[] arr = {10,4,8,3};
-        for (int j:leftRightDifference(arr)){
-            System.out.println(j);
-        }
 
+        System.out.println(romanToInt("MCMXCIV"));
+    }
+
+    public static int romanToInt(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
+
+        int result = 0;
+        for (int i = 1; i < s.length(); i++) {
+            char previous = s.charAt(i - 1);
+            char next = s.charAt(i);
+            int val=0;
+            if (next < previous) {
+                 val = -1 * map.get(previous);
+
+            }
+            result = result + val;
+            if(i==s.length()-1) result=result+next;
+        }
+        return result;
     }
 
     public static int[] leftRightDifference(int[] nums) {
         int[] leftSum = new int[nums.length];
         int[] rightSum = new int[nums.length];
         leftSum[0] = 0;
-        rightSum[nums.length-1] = 0;
-    int temp=0;
+        rightSum[nums.length - 1] = 0;
+
+        int temp = 0;
         for (int i = 1; i < nums.length; i++) {
-             temp=temp+nums[i - 1];
+            temp = temp + nums[i - 1];
             leftSum[i] = temp;
         }
-        int temp1=0;
-        for (int i = nums.length - 2; i > 0; i--) {
-             temp1=temp1+nums[i - 1];
+
+        temp = 0;
+        for (int i = nums.length - 2; i >= 0; i--) {
+            temp = temp + nums[i + 1];
             rightSum[i] = temp;
         }
         int[] result = new int[nums.length];
+
         for (int i = 0; i < nums.length; i++) {
 
             result[i] = Math.abs(leftSum[i] - rightSum[i]);
 
         }
-return result;
+        return result;
     }
 
     public static int removeElement(int[] nums, int val) {

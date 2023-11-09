@@ -7,7 +7,46 @@ import java.util.*;
 
 public class StringSolutions {
     public static void main(String[] args) {
+        String s = "abc";
+        String v = "abc";
+        System.out.println(s.substring(0, 2));
 
+
+    }
+
+    public static String longestCommonPrefix(String[] strs) {
+        int i=0;
+        int j=0;
+
+        if(strs.length==0){return "";}
+        for (String element : strs) {
+            if(element.equals("")){
+                return "";
+            }
+           boolean b= strs[i+1].startsWith(element.substring(0,element.length()-j));
+            i++;
+            if(b){continue;}
+            j++;
+
+        }
+
+        String s = strs[0];
+        String v="";
+       int i=0;
+             v = s.substring(0, s.length() - i);
+            for (String element : strs) {
+                boolean b = element.startsWith(v);
+                i++;
+                if(b){
+                    continue;
+                }else{
+                    break;
+                }
+
+            }
+
+
+        return v;
 
     }
 

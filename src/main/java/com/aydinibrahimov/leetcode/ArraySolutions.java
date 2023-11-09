@@ -29,16 +29,14 @@ public class ArraySolutions {
 
         int result = 0;
         for (int i = 1; i < s.length(); i++) {
-            char previous = s.charAt(i - 1);
-            char next = s.charAt(i);
-            int val = map.get(previous);
-            if (map.get(next) > map.get(previous)) {
-                val = -1 * map.get(previous);
+
+            int val = map.get(s.charAt(i - 1));
+            if (map.get(s.charAt(i)) > val) {
+                val = -1 * val;
             }
             result = result + val;
-            if (i == s.length() - 1) result = result + map.get(next);
         }
-        return result;
+        return result + map.get(s.charAt(s.length() - 1));
     }
 
     public static int[] leftRightDifference(int[] nums) {

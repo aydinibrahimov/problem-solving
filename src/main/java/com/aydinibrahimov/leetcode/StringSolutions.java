@@ -13,6 +13,12 @@ public class StringSolutions {
         byte b= (byte) s;
         System.out.println(b);
 
+       List<Integer> list=Arrays.asList(1,2,3);
+       AbstractMap
+
+        System.out.println(list.set(2,7));
+        System.out.println(list);
+
 
     }
 

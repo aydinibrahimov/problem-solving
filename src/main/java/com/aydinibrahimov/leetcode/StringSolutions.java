@@ -8,14 +8,13 @@ import java.util.*;
 public class StringSolutions {
 
     public static void main(String[] args) {
-        foo(7, 0);
+        foo(7);
     }
 
-    static void foo(int a, int counter) {
+    static void foo(int a) {
         if (a == 0) return;
-        counter++;
-        foo(a - 1, counter);
-        System.out.println(counter + "->" + a);
+        foo(a - 1);
+        System.out.println( a);
     }
 
 

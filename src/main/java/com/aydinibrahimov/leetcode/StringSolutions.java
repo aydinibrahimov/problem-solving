@@ -6,20 +6,18 @@ import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
 import java.util.*;
 
 public class StringSolutions {
+
     public static void main(String[] args) {
-       int s=300;
-        System.out.println(Integer.toBinaryString(s));
-        System.out.println(s);
-        byte b= (byte) s;
-        System.out.println(b);
-
-       List<Integer> list=Arrays.asList(1,2,3);
-
-        System.out.println(list.set(2,7));
-        System.out.println(list);
-
-
+        foo(7, 0);
     }
+
+    static void foo(int a, int counter) {
+        if (a == 0) return;
+        counter++;
+        foo(a - 1, counter);
+        System.out.println(counter + "->" + a);
+    }
+
 
 //    public static String longestCommonPrefix(String[] strs) {
 //        int i=0;

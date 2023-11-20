@@ -8,10 +8,13 @@ import java.util.*;
 public class StringSolutions {
 
     public static void main(String[] args) {
-        foo(7);
+
+    int a=5;
+    double d=3;
+
     }
 
-    static void foo(int a) {
+    public static void foo(int a) {
         if (a == 0) return;
         foo(a - 1);
         System.out.println( a);

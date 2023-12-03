@@ -8,12 +8,39 @@ import java.io.IOException;
 import java.lang.management.MemoryType;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class ArraySolutions {
     public static void main(String[] args) {
+        StringBuilder sb1 = new StringBuilder("123456");
+        sb1.subSequence(2, 4);
+        sb1.deleteCharAt(3);
+        sb1.reverse();
+        System.out.println(sb1);
+    }
 
-        System.out.println(romanToInt("LVIII"));
+
+    public static int findNonMinOrMax(int[] nums) {
+       int minIndex=-1;
+       int maxIndex=-1;
+
+        for(int i=1;i<nums.length;i++){
+
+            int min=nums[0];
+            int max=min;
+
+            if(min>nums[i]){
+                minIndex=i;
+            }else if(max<nums[i]){
+                maxIndex=i;
+            }
+
+        }
+        if (minIndex == -1 && maxIndex == -1) {
+            return -1;
+        }
+return  0;
     }
 
     public static int romanToInt(String s) {

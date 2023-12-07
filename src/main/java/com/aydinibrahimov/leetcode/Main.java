@@ -1,7 +1,6 @@
 package com.aydinibrahimov.leetcode;
 
 
-import com.aydinibrahimov.leetcode.common.Rectangle;
 import java.io.IOException;
 
 

@@ -1,15 +1,6 @@
 package com.aydinibrahimov.leetcode.common;
 
-public class Rectangle {
+public class Rectangle extends Shape{
 
-
-        public static void main(String[] args) {
-             try {
-
-             }catch (Exception e){
-                throw e;
-             }
-
-           }
 
 }

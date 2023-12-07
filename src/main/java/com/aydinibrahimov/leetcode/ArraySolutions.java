@@ -22,25 +22,25 @@ public class ArraySolutions {
 
 
     public static int findNonMinOrMax(int[] nums) {
-       int minIndex=-1;
-       int maxIndex=-1;
+        int minIndex = -1;
+        int maxIndex = -1;
 
-        for(int i=1;i<nums.length;i++){
+        for (int i = 1; i < nums.length; i++) {
 
-            int min=nums[0];
-            int max=min;
+            int min = nums[0];
+            int max = min;
 
-            if(min>nums[i]){
-                minIndex=i;
-            }else if(max<nums[i]){
-                maxIndex=i;
+            if (min > nums[i]) {
+                minIndex = i;
+            } else if (max < nums[i]) {
+                maxIndex = i;
             }
 
         }
         if (minIndex == -1 && maxIndex == -1) {
             return -1;
         }
-return  0;
+        return 0;
     }
 
     public static int romanToInt(String s) {

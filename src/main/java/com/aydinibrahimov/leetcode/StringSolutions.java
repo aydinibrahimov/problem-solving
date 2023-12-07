@@ -9,61 +9,25 @@ public class StringSolutions {
 
     public static void main(String[] args) {
 
-    int a=5;
-    double d=3;
+        int a = 5;
+        double d = 3;
 
     }
 
     public static void foo(int a) {
         if (a == 0) return;
         foo(a - 1);
-        System.out.println( a);
+        System.out.println(a);
     }
 
 
-//    public static String longestCommonPrefix(String[] strs) {
-//        int i=0;
-//        int j=0;
-//
-//        if(strs.length==0){return "";}
-//        for (String element : strs) {
-//            if(element.equals("")){
-//                return "";
-//            }
-//           boolean b= strs[i+1].startsWith(element.substring(0,element.length()-j));
-//            i++;
-//            if(b){continue;}
-//            j++;
-//
-//        }
-//
-//        String s = strs[0];
-//        String v="";
-//       int i=0;
-//             v = s.substring(0, s.length() - i);
-//            for (String element : strs) {
-//                boolean b = element.startsWith(v);
-//                i++;
-//                if(b){
-//                    continue;
-//                }else{
-//                    break;
-//                }
-//
-//            }
-//
-//
-//        return v;
-//
-//    }
-
-    public  String decodeMessage(String key, String message) {
+    public String decodeMessage(String key, String message) {
 
 
         return "";
     }
 
-    public  boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         String a = String.join("", word1);
         String b = String.join("", word2);
         return a.equals(b);

@@ -21,6 +21,11 @@ public class ArraySolutions {
     }
 
 
+    public static int searchInsert(int[] nums, int target) {
+
+
+    }
+
     public static int findNonMinOrMax(int[] nums) {
         int minIndex = -1;
         int maxIndex = -1;

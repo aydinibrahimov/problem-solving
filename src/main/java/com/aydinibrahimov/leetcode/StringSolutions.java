@@ -16,13 +16,12 @@ public class StringSolutions {
 
 
     public String largestOddNumber(String num) {
-
-        int c = 0;
-        for (char s : num.toCharArray()) {
-            int a = Integer.valueOf(s);
-            if (c < a) c = a;
+        int c=0;
+        for(char s : num.toCharArray()){
+            int a=Integer.valueOf(s);
+            if(c<a)c=a;
         }
-        return toString();
+        return String.valueOf(c);
     }
 
     public static void foo(int a) {

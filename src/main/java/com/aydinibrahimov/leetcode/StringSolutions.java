@@ -8,18 +8,27 @@ import java.util.*;
 public class StringSolutions {
 
     public static void main(String[] args) {
-
-        int a = 5;
-        double d = 3;
+        String s = "Hello World my";
+        System.out.println(lengthOfLastWord(s));
 
     }
 
 
+    public static int lengthOfLastWord(String s) {
+        int lastIndex = s.length() - 1;
+        int count = 0;
+        for (int i = lastIndex; i > 0; i--) {
+            if (s.charAt(i) == ' ' && count != 0) break;
+            count++;
+        }
+        return count;
+    }
+
     public String largestOddNumber(String num) {
-        int c=0;
-        for(char s : num.toCharArray()){
-            int a=Integer.valueOf(s);
-            if(c<a)c=a;
+        int c = 0;
+        for (char s : num.toCharArray()) {
+            int a = Integer.valueOf(s);
+            if (c < a) c = a;
         }
         return String.valueOf(c);
     }

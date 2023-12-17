@@ -1,14 +1,6 @@
 package com.aydinibrahimov.leetcode;
 
-import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
-
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.lang.management.MemoryType;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 
 public class ArraySolutions {
@@ -23,25 +15,20 @@ public class ArraySolutions {
 
 
     public static int searchInsert(int[] nums, int target) {
-        int index = -1;
-
-        List<Integer> list = new ArrayList<>();
-
-        for (int i : nums) {
-            list.add(i);
-
-        }
-
-        if (list.contains(target)) {
-            index = list.indexOf(target);
-        } else {
-            for (int i : list) {
-                if (i < target) continue;
-
-                index= list.indexOf(i);
+        int low = 0;
+        int high = nums.length - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (target == nums[mid]) {
+                return mid;
+            } else if (target < nums[mid]) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
             }
         }
-return index;
+
+        return low;
     }
 
     public static int findNonMinOrMax(int[] nums) {

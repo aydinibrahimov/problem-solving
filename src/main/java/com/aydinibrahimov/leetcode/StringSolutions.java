@@ -8,7 +8,7 @@ import java.util.*;
 public class StringSolutions {
 
     public static void main(String[] args) {
-        String s = "Hello World my";
+        String s = "a";
         System.out.println(lengthOfLastWord(s));
 
     }
@@ -17,8 +17,12 @@ public class StringSolutions {
     public static int lengthOfLastWord(String s) {
         int lastIndex = s.length() - 1;
         int count = 0;
-        for (int i = lastIndex; i > 0; i--) {
-            if (s.charAt(i) == ' ' && count != 0) break;
+        for (int i = lastIndex; i >= 0; i--) {
+            if (s.charAt(i) == ' ' && count == 0) {
+                continue;
+            } else if (s.charAt(i) == ' ' && count != 0) {
+                break;
+            }
             count++;
         }
         return count;

@@ -13,7 +13,13 @@ public class StringSolutions {
     }
 
     public static int minOperations(String s) {
-
+        int count=0
+            for(int i=0;i<=s.length()-2;i+=2){
+               if( s.charAt(i)=='0' && s.charAt(++i)=='1'){
+                   continue;
+                   count=1;
+               }else if()
+            }
     }
 
     public static List<Integer> findWordsContaining(String[] words, char x) {

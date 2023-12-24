@@ -8,10 +8,29 @@ import java.util.*;
 public class StringSolutions {
 
     public static void main(String[] args) {
-        String s = "a";
-        System.out.println(lengthOfLastWord(s));
+
 
     }
+
+    public static int minOperations(String s) {
+
+    }
+
+    public static List<Integer> findWordsContaining(String[] words, char x) {
+
+        int i=0;
+        List<Integer> list=new ArrayList<>();
+        for(String s: words){
+            s.
+            if(s.contains(String.valueOf(x))) {
+                list.add(i);
+            }
+            i++;
+        }
+        return list;
+
+    }
+
 
 
     public static int lengthOfLastWord(String s) {

@@ -3,6 +3,7 @@ package com.aydinibrahimov.leetcode;
 
 import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
 
+import javax.swing.tree.TreeNode;
 import java.util.*;
 
 public class StringSolutions {
@@ -12,13 +13,17 @@ public class StringSolutions {
 
     }
 
+
+
     public static int minOperations(String s) {
-        int count=0
+        int count=0;
             for(int i=0;i<=s.length()-2;i+=2){
                if( s.charAt(i)=='0' && s.charAt(++i)=='1'){
                    continue;
-                   count=1;
-               }else if()
+                   return count;
+               }else{
+
+               }
             }
     }
 

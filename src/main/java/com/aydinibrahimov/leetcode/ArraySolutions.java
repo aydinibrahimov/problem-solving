@@ -1,18 +1,19 @@
 package com.aydinibrahimov.leetcode;
 
+import javax.swing.tree.TreeNode;
 import java.util.*;
 
 
 public class ArraySolutions {
     public static void main(String[] args) {
 
-        int[] array = {1, 3, 5, 6};
-        int target = 2;
-
-        System.out.println(searchInsert(array, target));
 
     }
 
+
+    public static TreeNode sortedArrayToBST(int[] nums) {
+
+    }
 
     public static int searchInsert(int[] nums, int target) {
         int low = 0;

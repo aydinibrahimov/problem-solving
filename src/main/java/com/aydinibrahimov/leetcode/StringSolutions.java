@@ -13,27 +13,25 @@ public class StringSolutions {
 
     }
 
-
-
     public static int minOperations(String s) {
-        int count=0;
-            for(int i=0;i<=s.length()-2;i+=2){
-               if( s.charAt(i)=='0' && s.charAt(++i)=='1'){
-                   continue;
-                   return count;
-               }else{
+        int count = 0;
+        for (int i = 0; i <= s.length() - 2; i += 2) {
+            if (s.charAt(i) == '0' && s.charAt(++i) == '1') {
+                continue;
+                return count;
+            } else {
 
-               }
             }
+        }
     }
 
     public static List<Integer> findWordsContaining(String[] words, char x) {
 
-        int i=0;
-        List<Integer> list=new ArrayList<>();
-        for(String s: words){
+        int i = 0;
+        List<Integer> list = new ArrayList<>();
+        for (String s : words) {
             s.
-            if(s.contains(String.valueOf(x))) {
+            if (s.contains(String.valueOf(x))) {
                 list.add(i);
             }
             i++;
@@ -41,7 +39,6 @@ public class StringSolutions {
         return list;
 
     }
-
 
 
     public static int lengthOfLastWord(String s) {

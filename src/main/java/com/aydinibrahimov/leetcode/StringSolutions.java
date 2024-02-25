@@ -1,10 +1,9 @@
 package com.aydinibrahimov.leetcode;
 
 
-import org.springframework.boot.autoconfigure.amqp.RabbitProperties;
-
-import javax.swing.tree.TreeNode;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class StringSolutions {
 
@@ -18,19 +17,21 @@ public class StringSolutions {
         for (int i = 0; i <= s.length() - 2; i += 2) {
             if (s.charAt(i) == '0' && s.charAt(++i) == '1') {
                 continue;
-                return count;
-            } else {
 
+            } else {
+                return 0;
             }
         }
+
+        return count;
     }
+
 
     public static List<Integer> findWordsContaining(String[] words, char x) {
 
         int i = 0;
         List<Integer> list = new ArrayList<>();
         for (String s : words) {
-            s.
             if (s.contains(String.valueOf(x))) {
                 list.add(i);
             }

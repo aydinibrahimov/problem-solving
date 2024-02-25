@@ -10,7 +10,7 @@ public class ArraySolutions {
 
     }
 
-    public int[] getConcatenation(int[] nums) {
+    public static int[] getConcatenation(int[] nums) {
 
         int l = nums.length;
         int[] newArray = new int[2 * l];

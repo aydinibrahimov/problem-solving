@@ -10,7 +10,16 @@ public class ArraySolutions {
 
     }
 
+    public int[] getConcatenation(int[] nums) {
 
+        int l = nums.length;
+        int[] newArray = new int[2 * l];
+        for (int i = 0; i < l; i++) {
+            newArray[i] = nums[i];
+            newArray[i + l] = nums[i];
+        }
+        return newArray;
+    }
 
 
     public static int searchInsert(int[] nums, int target) {

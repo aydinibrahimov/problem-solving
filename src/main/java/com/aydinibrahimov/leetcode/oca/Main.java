@@ -8,7 +8,7 @@ public class Main {
      * salam doc.. commnets
      *
      *
-     * */
+     */
 
     //salam
     /*

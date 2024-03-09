@@ -18,6 +18,7 @@ public class StringSolutions {
             if (s.charAt(i) == '0' && s.charAt(++i) == '1') {
                 continue;
 
+
             } else {
                 return 0;
             }

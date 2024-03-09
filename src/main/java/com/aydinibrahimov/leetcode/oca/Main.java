@@ -22,7 +22,10 @@ public class Main {
      */
 
 
-    //*/** aydin */
 
-    */*fhgh*/
+ ///*fhgh*/
+
+    /*
+     *  /* ferret */
+ */
 }

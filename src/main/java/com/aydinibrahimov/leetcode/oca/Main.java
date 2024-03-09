@@ -6,15 +6,15 @@ public class Main {
 
 
 
-    //SINGLELINE COMMENTS
+    //SINGLELINE COMMENT
 
     /*
-    *   MULTILINE
-    *   COMMENTS
+    *   MULTIPLE LINE
+    *   COMMENT
      */
 
     /**
-     * DOCUMANTATION COMMENTS
+     * DOCUMANTATION COMMENT
      *
      *
      */

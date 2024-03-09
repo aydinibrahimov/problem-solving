@@ -8,10 +8,10 @@ public class Main {
 
 
 
-    //SINGLELINE COMMENT
+    // SINGLELINE COMMENT
 
     /*
-    * //  MULTIPLE LINE
+    *   MULTIPLE LINE
     *   COMMENT
      */
 
@@ -20,4 +20,7 @@ public class Main {
      * @AUTHOR AYDIN IBRAHIMOV
      *
      */
+
+
+    // /* aydin */
 }

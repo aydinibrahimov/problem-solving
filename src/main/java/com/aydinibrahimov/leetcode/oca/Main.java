@@ -14,8 +14,8 @@ public class Main {
      */
 
     /**
-     * DOCUMANTATION COMMENT
-     *
+     * DOCUMENTATION COMMENT
+     * @AUTHOR AYDIN IBRAHIMOV
      *
      */
 }

@@ -1,6 +1,6 @@
 package com.aydinibrahimov.leetcode.oca;
 
-public class Main {
+ class Main {
 
     public static void main(String[] args) {
 
@@ -27,7 +27,7 @@ public class Main {
 
 
    //THE FOLLOWING MULTILINE COMMENT WILL NOT COMPILE
-    /*
-     *  /* ferret */
+    /**
+     *  /* ferret
  */
 }

@@ -4,15 +4,18 @@ public class Main {
 
     String a;
 
-    /**
-     * salam doc.. commnets
-     *
-     *
+
+
+    //SINGLELINE COMMENTS
+
+    /*
+    *   MULTILINE
+    *   COMMENTS
      */
 
-    //salam
-    /*
-    *salam xalq
-    *salam * xalqi
+    /**
+     * DOCUMANTATION COMMENTS
+     *
+     *
      */
 }

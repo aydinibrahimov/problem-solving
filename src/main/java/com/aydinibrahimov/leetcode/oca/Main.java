@@ -2,14 +2,16 @@ package com.aydinibrahimov.leetcode.oca;
 
 public class Main {
 
-    String a;
+    public static void main(String[] args) {
+
+    }
 
 
 
     //SINGLELINE COMMENT
 
     /*
-    *   MULTIPLE LINE
+    * //  MULTIPLE LINE
     *   COMMENT
      */
 

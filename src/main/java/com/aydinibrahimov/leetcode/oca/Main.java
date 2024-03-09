@@ -25,6 +25,8 @@ public class Main {
 
  ///*fhgh*/
 
+
+   //THE FOLLOWING MULTILINE COMMENT WILL NOT COMPILE
     /*
      *  /* ferret */
  */

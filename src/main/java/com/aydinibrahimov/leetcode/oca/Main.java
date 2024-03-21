@@ -1,33 +1,28 @@
 package com.aydinibrahimov.leetcode.oca;
 
- class Main {
+
+import java.util.Date;
+
+
+public class Main {
 
     public static void main(String[] args) {
+        Date utilDate = new Date();
+        java.sql.Date sqlDate=new java.sql.Date(100L);
+
 
     }
 
-
-
-    // SINGLELINE COMMENT
-
-    /*
-    *   MULTIPLE LINE
-    *   COMMENT
-     */
-
-    /**
-     * DOCUMENTATION COMMENT
-     * @AUTHOR AYDIN IBRAHIMOV
-     *
-     */
-
-
-
- ///*fhgh*/
-
-
-   //THE FOLLOWING MULTILINE COMMENT WILL NOT COMPILE
-    /**
-     *  /* ferret
+/*
+ *
+/**
  */
+}
+
+class classB {
+
+}
+
+class classC {
+
 }

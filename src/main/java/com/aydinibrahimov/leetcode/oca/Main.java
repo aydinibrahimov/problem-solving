@@ -7,13 +7,13 @@ import java.util.Date;
 
 public class Main {
 
+    int aydin=19;//instance variable
 
     public static void main(String[] args) {
-
-        java.util.Date utilDate = new java.util.Date();
-        Date date=new Date();
-
-
+    Main mainObject=new Main();
+        int aydin=20; //local variable
+        System.out.println(aydin);//20
+        System.out.println(mainObject.aydin);//19
 
     }
 
@@ -21,12 +21,4 @@ public class Main {
  *
 /**
  */
-}
-
-class classB {
-
-}
-
-class classC {
-
 }

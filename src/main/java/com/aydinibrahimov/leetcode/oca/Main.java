@@ -1,7 +1,7 @@
 package com.aydinibrahimov.leetcode.oca;
 
 
-import java.util.*;
+import java.util.Date;
 import java.sql.*;
 
 
@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         Date utilDate = new Date();
-//        java.sql.Date sqlDate=new java.sql.Date(100L);
+        java.sql.Date sqlDate=new java.sql.Date(100L);
 
 
     }

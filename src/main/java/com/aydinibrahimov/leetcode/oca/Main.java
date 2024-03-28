@@ -12,7 +12,7 @@ public class Main {
 
         java.util.Date utilDate = new java.util.Date();
         Date date=new Date();
-//        java.sql.Date sqlDate=new java.sql.Date(100L);
+
 
 
     }

@@ -19,7 +19,6 @@ public class Main {
         System.out.println(5+x+"eret"+x+y);//20
         System.out.println(Math.floor(5));
         Main mainObject = new Main();
-        System.out.println(mainObject.aydin);//19
 
     }
 

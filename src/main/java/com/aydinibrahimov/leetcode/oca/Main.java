@@ -23,6 +23,13 @@ public class Main {
         //because provided int
         short v=x/y;
 
+        double d=5;
+        float k=5;
+        float f=5.4;
+        k++;
+        --k;
+        ++k++; //why?
+
         System.out.println(b);
         System.out.println((int) c);
 

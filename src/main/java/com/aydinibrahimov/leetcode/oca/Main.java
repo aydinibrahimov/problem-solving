@@ -6,15 +6,16 @@ public class Main {
     String color = "red";
 
     private void printColor(String color) {
+        int e;
         color = "purple";
         System.out.println(color);
     }
 
-    int aydin = 19;//instance variable
+    static int aydin = 19;//instance variable
     static int j;
 
     public static void main(String... args) {
-        j = 14;
+        int g;
         new Main().printColor("blue");
 
         int x = 20; //local variable
